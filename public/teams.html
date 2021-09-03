@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fynd Meet</title>
+    <link rel="stylesheet" href="external/normalize.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/menu-icon.css">
+    <link rel="stylesheet" href="css/calendar-nav.css">
+    <link rel="stylesheet" href="css/calendar.css">
+    <link rel="stylesheet" href="css/meetings.css">
+    <link rel="stylesheet" href="css/teams.css">
+   
+    <link rel="shortcut icon" href="https://hdn-1.fynd.com/company/884/applications/000000000000000000000001/application/pictures/free-logo/original/oyW1Y8HEe-Fynd.png" type="image/x-icon">
+
+    <style>
+    </style>
+</head>
+
+<body>
+    <div id="fix-div-bg"></div>
+    <!----------------------------------------------Navigation-bar-for-Desktop-------------------------->
+    <nav>
+        <section class="calendar-nav">
+            <ul class="no-list-styling calendar-nav-left">
+                <li><a class="pr30 nav-a" href="calendar.html">Calendar</a>
+                </li>
+                <li><a class="pr30 nav-a" href="meetings.html">Meetings</a></li>
+                <li><a class="pr30 nav-a nav-active" href="teams.html">Teams</a></li>
+            </ul>
+            <ul class="no-list-styling calendar-nav-right">
+                <li>Hi&nbsp;<span><a href="#" class="pr30 nav-a user-color">User!</a></span></li>
+                <li><a href="#" class="nav-a">Logout</a></li>
+            </ul>
+        </section>
+        <!-----------------------------------Navigation-bar-for-Mobile--------------------------->
+        <section id="calendar-nav-mob">
+            <ul class="no-list-styling calendar-nav-mb">
+                <li class="my-meetings">My Meetings</li>
+                <li>
+                    <div class="container" onclick="myFunction(this); expandHamburger()">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </li>
+            </ul>
+            <div id="myLinks" class="my-links">
+                <a href="calendar.html" class="pl nav-a">Calendar</a><br>
+                <hr>
+
+                <a href="meetings.html" class="pl nav-a">Meetings</a><br>
+                <hr>
+                <a href="teams.html" class="pl nav-a">Teams</a><br>
+            </div>
+        </section>
+    </nav>
+
+
+    <h2 class="pl margin70 teams-heading">Teams</h2>
+    <hr class="ml mr hr mb0"><br>
+    <p class="pl mt0 grey">View and edit teams you are part of</p>
+
+
+    <!----------------------Team 1------------------------------>
+    <div class=team-group>
+
+        <div class="search-result team">
+            <h3 class="team-name mb10">Customer&nbsp;acquisition&nbsp;campaign</h3>
+            <span class="team-subtitle slightly-bold b">@customer acquisition</span>
+            <p class="team-caption grey ">Team to come up with strategies to win over customers by end of FY22</p>
+            <button class="red-btn ">Excuse yourself</button>
+            <hr class="hr">
+
+            <p class="attendees-example team-members"><span class="b ">Members: </span>khushbu@gmail.com, ksb@gmail.com
+            </p>
+
+            <div class="flex pb26">
+                <select name="member" class="select-members-for-meeting" multiple size="10">
+                    <option disabled>Select member</option>
+                    <option value="Stefen@gmail.com">Stefen@gmail.com</option>
+                    <option value="Klaus@gmail.com">Klaus@gmail.com</option>
+                    <option value="DamonSalvator@gmail.com" selected>DamonSalvator@gmail.com</option>
+                    <option value="Jeremy@gmail.com">Jeremy@gmail.com</option>
+                </select>
+                <button class="blue-btn add-btn">Add</button>
+            </div>
+        </div>
+
+
+        <!-------------------------------------------Team 2------------------>
+        <div class="search-result team">
+            <h3 class="team-name mb10">MERN stack training</h3>
+            <span class="team-subtitle slightly-bold b">@mern-stack-training</span>
+            <p class="team-caption grey ">Group attending MERN stack training for website revamp project</p>
+            <button class="red-btn ">Excuse yourself</button>
+            <hr class="hr">
+            <p class="attendees-example team-members"><span class="b">Members: </span>Jemy@gmail.com,Noah@gmail.com</p>
+
+            <div class="flex pb26">
+                <select name="member" class="select-members-for-meeting" multiple size="10">
+                    <option disabled>Select member</option>
+                    <option value="Stefen@gmail.com">Stefen@gmail.com</option>
+                    <option value="Klaus@gmail.com">Klaus@gmail.com</option>
+                    <option value="DamonSalvator@gmail.com" selected>DamonSalvator@gmail.com</option>
+                    <option value="Jeremy@gmail.com">Jeremy@gmail.com</option>
+                </select>
+                <button class="blue-btn add-btn">Add</button>
+            </div>
+
+        </div>
+
+
+        <div class="search-result team">
+            <h3 class="team-name mb10">Customer&nbsp;acquisition&nbsp;campaign</h3>
+            <span class="team-subtitle slightly-bold b">@customer acquisition</span>
+            <p class="team-caption grey ">Team to come up with strategies to win over customers by end of FY22</p>
+            <button class="red-btn ">Excuse yourself</button>
+            <hr class="hr">
+
+            <p class="attendees-example team-members"><span class="b ">Members: </span>khushbu@gmail.com,
+                ksb@gmail.com</p>
+
+            <div class="flex pb26">
+                <select name="member" class="select-members-for-meeting" multiple size="10">
+                    <option disabled>Select member</option>
+                    <option value="Stefen@gmail.com">Stefen@gmail.com</option>
+                    <option value="Klaus@gmail.com">Klaus@gmail.com</option>
+                    <option value="DamonSalvator@gmail.com" selected>DamonSalvator@gmail.com</option>
+                    <option value="Jeremy@gmail.com">Jeremy@gmail.com</option>
+                </select>
+                <button class="blue-btn add-btn">Add</button>
+            </div>
+        </div>
+
+
+        <!-------------------------------------------Team 2------------------>
+        <div class="search-result team">
+            <h3 class="team-name mb10">MERN stack training</h3>
+            <span class="team-subtitle slightly-bold b">@mern-stack-training</span>
+            <p class="team-caption grey ">Group attending MERN stack training for website revamp project</p>
+            <button class="red-btn ">Excuse yourself</button>
+            <hr class="hr">
+            <p class="attendees-example team-members"><span class="b">Members: </span>Jemy@gmail.com,Noah@gmail.com
+            </p>
+
+            <div class="flex pb26">
+                <select name="member" class="select-members-for-meeting" multiple size="10">
+                    <option disabled>Select member</option>
+                    <option value="Stefen@gmail.com">Stefen@gmail.com</option>
+                    <option value="Klaus@gmail.com">Klaus@gmail.com</option>
+                    <option value="DamonSalvator@gmail.com" selected>DamonSalvator@gmail.com</option>
+                    <option value="Jeremy@gmail.com">Jeremy@gmail.com</option>
+                </select>
+                <button class="blue-btn add-btn">Add</button>
+            </div>
+        </div>
+
+
+        <!-------------------------Create team button--------------->
+        <button class="btn create-team"><span  onclick="openCreateTeamForm()" class=" no-link">+</span></button>
+        <!-- <a class="btn create-team no-link" href="#create-teamform1">+</a> -->
+    </div>
+    <!-----------------------------  create team form---------------->
+
+    <div id="create-teamform1" class="create-teamform">
+        <span class="close">&times;</span>
+
+        <form action="">
+        <div class="flex create-team-form-flex">    <div>
+            <label for="">Name</label><br><br><br>
+             <label for="">Short&nbsp;name </label><br><br><br>
+             <label for="">Description</label>
+                </div>
+        <div>
+            <textarea class="more-columns" name="" id="" cols="20" rows="1"></textarea><br><br>
+            <textarea class="more-columns" name="" id="" cols="20" rows="1"></textarea><br><br>
+            <textarea class="more-columns" name="" id="" cols="20" rows="2"></textarea><br>
+  
+        </div></div>
+     
+            <p class="b add-members-in-team">Add Members:</p>
+
+            <div class="flex pb26">
+                <select name="member" class="w80p select-members-for-meeting" multiple size="10">
+                    <option disabled>Select member</option>
+                    <option value="Stefen@gmail.com">Stefen@gmail.com</option>
+                    <option value="Klaus@gmail.com">Klaus@gmail.com</option>
+                    <option value="DamonSalvator@gmail.com" selected>DamonSalvator@gmail.com</option>
+                    <option value="Jeremy@gmail.com">Jeremy@gmail.com</option>
+                </select>
+                <button class="blue-btn add-team-btn add-btn">Add</button>
+                 <br> <br>
+              
+            </div>
+            <button class="blue-btn create-team-btn ">Create</button>
+        </form>
+    </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="js/close-button.js"></script>
+    <script src="js/hamburger-menu.js"></script>
+
+</body>
+
+</html>
