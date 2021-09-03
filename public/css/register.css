@@ -1,0 +1,25 @@
+.app-name-mob{margin-bottom: 10%;}
+.app-name{
+    top: 20px;
+    margin-top: 2%;
+}
+@media (min-width:900px) {
+    .dialog-box{margin-top: 3%;}
+        .login-desc{
+            line-height: 1.5;
+        }
+        .right-side{
+            padding-bottom: 10%;
+            padding-top: 10%;
+        }
+        .login{
+            padding-top: 10%;
+        }
+        .signup-btn{padding:37%;}
+}
+@media (max-width:900px) {
+    .signup-btn{
+        padding:38%; 
+      }
+      
+  }

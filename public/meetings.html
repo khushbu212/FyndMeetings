@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fynd Meet</title>
+    <link rel="stylesheet" href="external/normalize.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/menu-icon.css">
+    <link rel="stylesheet" href="css/calendar-nav.css">
+<link rel="stylesheet" href="css/calendar.css">
+<link rel="stylesheet" href="css/meetings.css">
+<link rel="shortcut icon" href="https://hdn-1.fynd.com/company/884/applications/000000000000000000000001/application/pictures/free-logo/original/oyW1Y8HEe-Fynd.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <!----------------------------------------------Navigation-bar-for-Desktop-------------------------->
+    <nav>
+        <section class="calendar-nav">
+            <ul class="no-list-styling calendar-nav-left">
+                <li><a class="pr30 nav-a" href="calendar.html">Calendar</a>
+                </li>
+                <li><a class="pr30 nav-a nav-active" href="meetings.html">Meetings</a></li>
+                <li><a class="pr30 nav-a" href="teams.html">Teams</a></li>
+            </ul>
+            <ul class="no-list-styling calendar-nav-right">
+                <li >Hi&nbsp;<span ><a href="#" class="pr30 nav-a user-color">User!</a></span></li>
+                <li><a href="#" class="nav-a">Logout</a></li>
+            </ul>
+        </section>
+<!---------------------------------------------Navigation-bar-for-Mobile-------------------------------->
+        <section class="calendar-nav-mob">
+            <ul class="no-list-styling calendar-nav-mb">
+                <li class="my-meetings">My Meetings</li>
+                <li>
+                    <div class="container" onclick="myFunction(this); expandHamburger()">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </li>  </ul>
+                <div id="myLinks" class="my-links">
+                <a href="calendar.html" class="pl nav-a">Calendar</a><br><hr>
+                    
+                    <a href="meetings.html" class="pl nav-active nav-a">Meetings</a><br><hr>
+                   <a href="teams.html" class="pl nav-a">Teams</a><br>
+                </div>
+        </section>
+    </nav>
+        <!---------------------------Calendar DAte---------------------------------------------------->
+
+        <h2 class="pl margin70">Meetings</h2>
+        <hr class="ml mr hr"><br>
+        
+     <div class="flex add-filter-meetings " id="afm">
+        <button class="filter-meetings active  " ><a href="meetings.html">Filter/Search meetings</a></button>
+        <button class="add-meeting not-active"><a href="addMeeting.html">Add&nbsp;a meeting<a></button>
+            <button class="invisible-btn"><a href=""></a></button>
+
+        </div>
+
+<!------------------------------------------Search for Meetings-------------------------------------->
+<div class="search-for-meetings"><p class="search-heading">Search for meetings</p><hr class="hr search-for-meetings-hr">
+    <label for="date-searchformeetings" class="date-searchformeetings">Date</label>
+<select name="search-by-date" class="search-by-date">
+<option value="all">ALL</option>
+<option value="past">PAST</option>
+<option value="today">TODAY</option>
+<option value="upcoming">UPCOMING</option>
+</select><br>
+<label for="search-for-label">Search for</label><br>
+<textarea placeholder="Search using words which describe the meeting" class="search-for-textarea" name="search-for-textarea" id="" cols="30" rows="2"></textarea>
+<button class="blue-btn search-btn">Search</button>
+</div>
+
+<h2 class="meet-search">Meetings matching search criteria</h2>
+<hr class="hr hr-with-padding">
+
+
+<!-----------------------result 1------------------------------>
+<div class="search-result">
+    <h3 class="search-output-meeting-date">12 September 2020 <span class=search-output-meeting-time>06:00 - 07:00</span></h3>
+    <p class="meeting-title">Project kickoff</p>
+    <button class="red-btn ">Excuse yourself</button>
+    <hr class="hr">
+<label class="attendees b">Attendees: </label>
+<p class="attendees-example">khushbu@gmail.com,&nbsp;ksb@gmail.com</p>
+
+<div class="flex pb26">
+<select name="member" class="select-members-for-meeting" multiple size="10">
+   <option  disabled>Select member</option>
+        <option value="Stefen@gmail.com">Stefen@gmail.com</option>
+        <option value="Klaus@gmail.com">Klaus@gmail.com</option>
+        <option value="DamonSalvator@gmail.com" selected>DamonSalvator@gmail.com</option>
+     <option value="Jeremy@gmail.com">Jeremy@gmail.com</option>
+    </select>
+  <button class="blue-btn add-btn">Add</button></div>
+</div>
+
+
+<!-------------------------------------------Result 2------------------>
+<div class="search-result">
+    <h3 class="search-output-meeting-date">12 September 2020 <span class=search-output-meeting-time>09:00 - 10:30</span></h3>
+    <p class="meeting-title">AWS architecture</p>
+    <button class="red-btn ">Excuse yourself</button>
+    <hr class="hr">
+<label class="attendees b">Attendees:</label>
+<p class="attendees-example">Jemy@gmail.com,&nbsp;stef@gmail.com</p>
+
+<div class="flex">
+<select name="member" class="select-members-for-meeting" multiple size="10">
+   <option  disabled>Select member</option>
+        <option value="Stefen@gmail.com">Stefen@gmail.com</option>
+        <option value="Klaus@gmail.com">Klaus@gmail.com</option>
+        <option value="DamonSalvator@gmail.com" selected>DamonSalvator@gmail.com</option>
+     <option value="Jeremy@gmail.com">Jeremy@gmail.com</option>
+    </select>
+  <button class="blue-btn add-btn">Add</button></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/hamburger-menu.js"></script>
+   
+</body>
+
+</html>

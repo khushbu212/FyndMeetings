@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fynd Meet</title>
+    <link rel="stylesheet" href="external/normalize.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/menu-icon.css">
+    <link rel="stylesheet" href="css/calendar-nav.css">
+<link rel="stylesheet" href="css/calendar.css">
+<link rel="stylesheet" href="css/meetings.css">
+<link rel="shortcut icon" href="https://hdn-1.fynd.com/company/884/applications/000000000000000000000001/application/pictures/free-logo/original/oyW1Y8HEe-Fynd.png" type="image/x-icon">
+
+<style>
+    .search-for-meetings{margin-bottom:10px;}
+</style>
+
+</head>
+
+<body>
+    <!----------------------------------------------Navigation-bar-for-Desktop-------------------------->
+    <nav>
+        <section class="calendar-nav">
+            <ul class="no-list-styling calendar-nav-left">
+                <li><a class="pr30 nav-a" href="calendar.html">Calendar</a>
+                </li>
+                <li><a class="pr30 nav-a nav-active" href="meetings.html">Meetings</a></li>
+                <li><a class="pr30 nav-a" href="teams.html">Teams</a></li>
+            </ul>
+            <ul class="no-list-styling calendar-nav-right">
+                <li >Hi&nbsp;<span ><a href="#" class="pr30 nav-a blue">User!</a></span></li>
+                <li><a href="#" class="nav-a">Logout</a></li>
+            </ul>
+        </section>
+<!---------------------------------------------Navigation-bar-for-Mobile-------------------------------->
+        <section class="calendar-nav-mob">
+            <ul class="no-list-styling calendar-nav-mb">
+                <li class="my-meetings">My Meetings</li>
+                <li>
+                    <div class="container" onclick="myFunction(this); expandHamburger()">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </li>  </ul>
+                <div id="myLinks" class="my-links">
+                <a href="calendar.html" class="pl nav-a">Calendar</a><br><hr>
+                    
+                    <a href="meetings.html" class="pl nav-a">Meetings</a><br><hr>
+                   <a href="teams.html" class="pl nav-a">Teams</a><br>
+                </div>
+        </section>
+    </nav>
+        <!---------------------------Calendar DAte---------------------------------------------------->
+
+        <h2 class="pl margin70">Meetings</h2>
+        <hr class="ml mr hr"><br>
+        
+     <div class="flex add-filter-meetings " id="afm">
+        <button class="filter-meetings  not-active " ><a href="meetings.html">Filter/Search meetings</a></button>
+        <button class="add-meeting active"><a href="addMeeting.html">Add&nbsp;a meeting<a></button>
+            <button class="invisible-btn"><a href=""></a></button>
+
+        </div>
+
+<!------------------------------------------Search for Meetings-------------------------------------->
+<div class="search-for-meetings"><p class="search-heading">Add a new meeting</p><hr class="hr search-for-meetings-hr">
+    <label for="date-searchformeetings" class="date-searchformeetings">Date</label>
+<input type="date"  class="search-by-date">
+<label for="search-for-label">Start time (hh:mm)</label><br>
+<div class="m5">
+<input type="number" id="quantity" name="quantity"  min="00" max="23"><span class="b"> :</span>
+<input type="number" id="quantity" name="quantity" min="00" max="60"><br></div>
+<label for="search-for-label">End time (hh:mm)</label><br>
+<div class="m5">
+<input type="number" id="quantity" name="quantity" min="0" max="23"><span class="b"> :</span>
+<input type="number" id="quantity" name="quantity" min="1" max="60"><br>
+</div>
+<label for="search-for-label">Description</label><br>
+<textarea placeholder="What is agenda of the meeting?" class="search-for-textarea" name="search-for-textarea" id="" cols="30" rows="2"></textarea>
+<label for="search-for-label">EmailIDs of attendees, or team's short</label><br>
+<textarea placeholder="Jemy@gmail.com,&nbsp;stef@gmail.com" style="overflow:hidden" class="search-for-textarea" name="search-for-textarea" id="" cols="30" rows="1"></textarea>
+
+<button class="blue-btn search-btn">Add a meeting</button>
+</div>
+
+
+
+<script src="js/hamburger-menu.js"></script>
+   
+</body>
+
+</html>

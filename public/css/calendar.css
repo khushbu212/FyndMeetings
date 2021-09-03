@@ -1,0 +1,107 @@
+[type="date"] {
+  background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+}
+.about-date{
+color: #DD5555;;
+    display: flex;
+    justify-content: space-between;
+}
+#week-day{margin-top: 0;
+color: grey;}
+.calendar-blue-div{
+    position: absolute;
+    /* background-color: rgb(22,143,250,0.5); */
+    /* background-color: rgb(255 153 153); */
+    /* background-color: #73C7D5; */
+    background-color: hotpink;
+   
+    height: 7.5%;
+    width: 91%;
+}
+#select-date{
+    border: 0;
+    width: 10%;
+}
+div.flex{
+
+    margin: 0;
+    padding: 0;
+    margin-bottom: 8%;
+}
+.calendar-blue-div{left:7%;}
+.time{    margin-top: 0px;}
+@media (max-width:900px) {
+    .margin70{
+        margin-top:101px;
+    }
+    .calendar-blue-div{
+         height:57.594px;
+        width: 89%;
+    }
+    
+}
+@media(min-width:900px){
+    .calendar-blue-div{height:60px;
+        left: 5%;
+        width: 93%;
+    }
+    .time-table{
+        padding-left: 2%;
+    }
+    #select-date{margin-right: 2%;
+    width:12%;}
+    .margin70{
+        margin-top:70px;
+    }
+.flex{height: 0;}
+div.flex{margin-bottom: 65px;}
+}
+/************************************Event-on-calendar*****************************************/
+@media(min-width:900px){
+    .event-on-calendar{
+        position: absolute;
+        top:218px;
+        left:100px;
+        height: 45px;
+        width:80%;
+        font-size: 12px;
+    /* background-color:rgba(227,235,237,0.7); */
+   background-color:  rgb(233 185 223 / 70%);
+    border: 1px solid lightslategray;
+    }
+    .e2{top: 341px;
+    height:100px;
+    }
+}
+
+@media(max-width:900px){
+    .event-on-calendar{
+        position: absolute;
+        top:306px;
+        left:40px;
+        padding-top: 5px;
+        height: 48px;
+        width:80%;
+        font-size: 12px;
+    /* background-color:rgba(227,235,237,0.7); */
+    /* background-color: rgba(255 254 254 / 60%); */
+        /* background-color:rgba(227,235,237,0.7); */
+   background-color:  rgb(233 185 223 / 70%);
+    border: 1px solid lightslategray;
+    }
+    .e2{top: 433px;
+    height:100px;
+    }
+}
+.calendar-blue-div {
+  
+    border-bottom: 1px solid grey;
+    background-color: white;
+    box-shadow: 1px 1px 4px grey;
+}
+.event-on-calendar {
+    background-color: #EDF2F4;}
+.time-table{color: #2B2D42;}
+#select-date {
+    background-color: inherit;}
+    .calendar-hr{margin-right:2%}

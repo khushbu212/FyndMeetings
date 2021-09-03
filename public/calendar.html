@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fynd Meet</title>
+    <link rel="shortcut icon" href="https://hdn-1.fynd.com/company/884/applications/000000000000000000000001/application/pictures/free-logo/original/oyW1Y8HEe-Fynd.png" type="image/x-icon">
+
+ 
+    <link rel="stylesheet" href="external/normalize.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/menu-icon.css">
+    <link rel="stylesheet" href="css/calendar-nav.css">
+<link rel="stylesheet" href="css/calendar.css">
+
+</head>
+
+<body>
+    <!----------------------------------------------Navigation-bar-for-Desktop-------------------------->
+    <nav>
+        <section class="calendar-nav">
+            <ul class="no-list-styling calendar-nav-left">
+                <li><a class="pr30 nav-a nav-active" href="calendar.html">Calendar</a>
+                </li>
+                <li><a class="pr30 nav-a " href="meetings.html">Meetings</a></li>
+                <li><a class="pr30 nav-a" href="teams.html">Teams</a></li>
+            </ul>
+            <ul class="no-list-styling calendar-nav-right">
+                <li >Hi&nbsp;<span ><a href="#" class="pr30 nav-a user-color">User!</a></span></li>
+                <li><a href="# " class="nav-a">Logout</a></li>
+            </ul>
+        </section>
+<!---------------------------------------------Navigation-bar-for-Mobile-------------------------------->
+        <section class="calendar-nav-mob">
+            <ul class="no-list-styling calendar-nav-mb">
+                <li class="my-meetings" >My Meetings</li>
+                <li>
+                    <div class="container" onclick="myFunction(this); expandHamburger()">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </li>  </ul>
+                <div id="myLinks" class="my-links">
+                <a href="calendar.html" class="pl nav-a nav-active">Calendar</a><br><hr class="hr">
+                    
+                    <a href="meetings.html" class="pl nav-a">Meetings</a><br><hr class="hr">
+                   <a href="teams.html" class="pl nav-a">Teams</a><br>
+                </div>
+        </section>
+        <!---------------------------Calendar DAte---------------------------------------------------->
+
+        <h2 class="pl bb margin70">Calendar</h2>
+        <hr class="ml calendar-hr hr">
+        <div class="about-date">
+        <p class="ml b" id="todaysDate"></p>
+
+        <input class="mr b" type="date" name="select-date" id="select-date">
+    </div>
+    <p class="ml b" id="week-day"></p>
+    <div class="time-table">
+<div class="flex"><p class="time">0</p><div class="calendar-blue-div"></div></div>
+<div class="flex"><p class="time">1</p><div class="calendar-blue-div"></div></div>
+<div class="flex"><p class="time">2</p><div class="calendar-blue-div"></div></div>
+<div class="flex"><p class="time">3</p><div class="calendar-blue-div"></div></div>
+<div class="flex"><p class="time">4</p><div class="calendar-blue-div"></div></div>
+<div class="flex"><p class="time">5</p><div class="calendar-blue-div"></div></div>
+<div class="flex"><p class="time">6</p><div class="calendar-blue-div"></div></div>
+<div class="flex"><p class="time">7</p><div class="calendar-blue-div"></div></div>
+<div class="flex"><p class="time">8</p><div class="calendar-blue-div"></div></div>
+<div class="flex"><p class="time">9</p><div class="calendar-blue-div"></div></div>
+<div class="flex"><p class="time">10</p><div class="calendar-blue-div"></div></div>
+<div class="flex"><p class="time">11</p><div class="calendar-blue-div"></div></div>
+<div class="flex"><p class="time">12</p><div class="calendar-blue-div"></div></div>
+<div class="flex"><p class="time">13</p><div class="calendar-blue-div"></div></div>
+<div class="flex"><p class="time">14</p><div class="calendar-blue-div"></div></div>
+<div class="flex"><p class="time">15</p><div class="calendar-blue-div"></div></div>
+<div class="flex"><p class="time">16</p><div class="calendar-blue-div"></div></div>
+<div class="flex"><p class="time">17</p><div class="calendar-blue-div"></div></div>
+<div class="flex"><p class="time">18</p><div class="calendar-blue-div"></div></div>
+<div class="flex"><p class="time">19</p><div class="calendar-blue-div"></div></div>
+<div class="flex"><p class="time">20</p><div class="calendar-blue-div"></div></div>
+<div class="flex"><p class="time">21</p><div class="calendar-blue-div"></div></div>
+<div class="flex"><p class="time">22</p><div class="calendar-blue-div"></div></div>
+<div class="flex"><p class="time">23</p><div class="calendar-blue-div"></div></div>
+
+    </div>
+
+
+<!-----------------------------------Event-on-calendar---------------------------->
+
+<div class="event-on-calendar">
+   <p class="p0 bb m0">project kickoff</p>
+<hr>
+<p class="p0 m0">Attendees: Stefen@gmail.com, Klaus@gmail.com</p>
+</div>
+
+<div class="event-on-calendar e2">
+    <p class="p0 bb m0">AWS architecture</p>
+ <hr>
+ <p class="p0 m0">Attendees: DamonSalvator@gmail.com, Jeremy@gmail.com</p>
+ </div>
+ 
+ 
+ 
+
+
+
+
+
+
+<script src="js/todays-date.js"></script>
+<script src="js/hamburger-menu.js"></script>
+    </nav>
+</body>
+
+</html>

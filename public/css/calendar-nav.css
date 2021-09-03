@@ -1,0 +1,159 @@
+
+html{
+    width: 100%;
+}
+body{
+    width: 100%;
+}
+nav{width: 100%;}
+.topnav #myLinks {
+    display: none;
+  }
+  
+.calendar-nav-left{
+display:flex;
+justify-content: flex-start;
+
+}
+
+.calendar-nav
+{background-color: gainsboro;
+    
+    display: flex;
+    text-shadow: 0.5px 1px 0.3px grey;
+    justify-content: space-between;
+    padding: 0 5% 0 2%;
+   
+    color: white;
+    
+}
+.calendar-nav-left li{
+    padding: 0 5%;
+    padding-left: 0;
+}
+.calendar-nav-right li{
+    padding: 0 5%;
+    padding-right: 0;
+}
+.nav-a{
+    color:white;
+text-decoration: none;
+}
+.nav-a:hover{
+    font-weight: bold;
+}
+.calendar-nav .pr30:focus{
+font-weight: bold;
+
+text-shadow: black 0 0 0.23px;
+}
+
+.pr30{
+    padding-right: 30px;
+}
+.calendar-nav-mb{margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 7% 5% 4% 5%;
+    display: flex;
+    justify-content: space-between;
+  /*  background-color: gainsboro;*/
+
+    display: flex;
+    text-shadow: 0.5px 1px 0.3px grey;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+   
+    z-index: 2;
+ 
+   
+    color: white;
+}
+#myLinks{   
+    /**********************************************************background color for navbar subitems**************************************************/
+    /* background-color: #F8F8F8; */
+    /* background-color: rgb(255,153,153); */
+    background-color: #fd267a;
+    border: 1px solid #E7E7E7;
+    
+    font-size: larger;
+line-height: 2.5;
+position: fixed;
+width: 100%;
+box-shadow: rgb(24 27 18) 2px 0px 14px 2px;
+z-index: 1;
+top: 65px;
+}
+.calendar-nav,.calendar-nav-mb,#mylinks{
+    /* background-color: #F8F8F8; */
+    /* background-color: rgb(255,153,153); */
+    /* background-image: linear-gradient(to right,#fd267a, #ff7854); */
+    background-color: #DD5555;
+    color:white;
+     /*********************************************************background color for navbar*************************************************************************/
+    border: 1px solid #E7E7E7;
+}
+.calendar-nav:hover,.calendar-nav-mb:hover,#mylinks:hover
+{
+    color:white;
+}
+
+
+.my-links{
+    display:none;
+}
+.my-meetings{    font-size: x-large;}
+.calendar-nav-mb{
+    display: none;
+}
+.nav-bar-mobile{
+    display:flex;
+}
+.calendar-nav-right{
+    display:flex;
+justify-content: flex-end;
+padding-right: 56px;
+}
+.blue{color: dodgerblue;}
+@media (max-width:900px  ){
+    .calendar-nav{
+
+        display:none;
+    }
+    .calendar-nav-mb{
+        display: flex;
+        width:90%;
+        padding-top:15px;
+        padding-bottom:10px;
+    }
+    
+   
+
+}
+@media(min-width:900px){
+    .calendar-nav{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        right: 0;
+        left: 0;
+        z-index: 1;
+    }
+}
+.calendar-nav-mb{
+    border: none;
+}
+#myLinks{
+    width:87%;
+    height:100%;
+    padding-left:5%;
+    padding-right:10%;
+border-left: 0 ;
+border-right:0;
+background-color: #DD5555;
+}
+    .user-color{color: #fff500;}
+    html{
+        background-color: #f1f1f1;;
+    }
+    .nav-active{font-weight: bold;}

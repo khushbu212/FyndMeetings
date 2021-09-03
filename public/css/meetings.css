@@ -1,0 +1,241 @@
+
+body{
+
+    color:#1B2024;
+}.margin70{
+    margin-top:86px;
+}
+.filter-meetings, .add-meeting{
+    background-color: white;
+    border: rgb(201, 195, 195) 1px solid;
+    padding: 3%;
+   
+    width: 170px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+}
+.filter-meetings a, .add-meeting a{
+    text-decoration: none;
+    color:#3295FF;
+    color: #EF233C;
+    font-weight: 500;
+    
+}
+.invisible-btn{display: none;}
+
+
+
+.add-filter-meetings{
+    justify-content:center;
+}
+.invisible-btn{display: none;}
+.active{ 
+    border-radius: 3px;
+
+    border: rgb(201, 195, 195) 1px solid;
+    border-bottom: none;
+}
+.active a{ color: #6B7176;}
+.filter-meetings{margin-left: 5%;}
+@media (max-width:900px){
+    .add-meeting{
+        margin-right: 5%;
+    }
+}
+@media (min-width:900px){
+    #afm{
+    justify-content: flex-start;
+   
+}
+.invisible-btn{
+    display: flex;
+}
+.filter-meetings, .add-meeting
+{background-color: transparent;
+padding-top:10px;
+padding-bottom:40px;
+}
+.margin70
+{
+    margin-top:70px;
+}
+.filter-meetings
+{ width: 15%;
+    margin-left:5%;
+}
+
+
+.invisible-btn{display: flex;
+    display: flex;
+    background-color: transparent;
+width:60%;
+border: none;
+border-bottom: rgb(201, 195, 195) 1px solid;
+padding:3%;
+padding-top:10px;
+padding-bottom:40px;
+
+}
+
+}
+/****************************search for meetings********************************/
+.search-for-meetings{
+ 
+  background-color: white;
+    color: #1B2024;
+margin: 3% 5% 0 5% ;
+padding: 1% 5% 5% 5%;
+
+border-radius: 4px;
+box-shadow: 0 0 4px grey;
+
+
+}
+    .date-searchformeetings{
+        display: block;
+        padding: 3% 0 1% 0;
+       
+    }
+    .search-by-date{width:100%;
+    padding-top: 2%;
+padding-bottom: 2%;
+margin: 2% 0 5% 0;
+border:none;
+border-radius: 4px;
+border: 1px solid #8D99AE;
+}
+    #afm{margin-bottom:0;}
+    .search-heading{
+        margin-top:3%;
+        margin-bottom: 3%;
+        /* color: white; */
+color: #1B2024;
+font-weight: bold;
+        font-size: x-large;
+    }
+    .search-for-textarea{width: 100%;
+        margin: 2% 0 5% 0;
+       
+        padding:5px 0;
+        border:none;
+        border-radius:4px;
+        border: 1px solid #8D99AE;
+        
+    }
+  
+    .search-for-meetings-hr{
+        border:none;
+    border-bottom: white 1px solid;
+    border-bottom: #e7e7e7 1px solid;
+
+    }
+
+/**************************Search output for meetings*************************************/
+.select-members-for-meeting
+{   padding-top:4px;
+    height:27px;
+    font-size: 16px;
+    overflow-y:auto;
+    text-overflow: ellipsis;
+width:50%;
+margin-right:2%;}
+.search-result{border-radius: 4px;
+    border: rgb(201, 195, 195) 1px solid;
+    padding: 5%;
+    padding-top: 0;
+    margin: 0 5% 5% 5%;
+/* background-color: #10a6a4; */
+background-color: #F5BEB0;
+background-color: #fd29799e;
+background-color: white;
+box-shadow: 0 0 4px grey;
+}
+     .hr-with-padding,.meet-search{   margin-left: 5%;
+        margin-right: 5%;
+    }
+    .hr-with-padding{
+        margin-bottom:20px;
+    }
+  .search-output-meeting-time{
+      font-weight: normal;
+      font-size: 16px;
+  }
+  .search-output-meeting-date{
+      font-size: 20;
+  }
+ .search-result hr{
+     
+    margin-top: 14px;
+    margin-bottom: 18px;
+
+ }
+
+ @media( min-width:900px)
+ {
+.search-for-meetings{
+    margin-top: 62px;
+    margin:62px 32px 0 5%;
+    padding:1% 2% 1.5% 2%;
+    
+}
+.ml.mr.hr{width:93%;}
+.invisible-btn{width:65%;}
+.search-heading {
+    margin-top: 8px;
+    margin-bottom: 10px;
+    font-weight: bold;
+font-size: 28px;
+}
+.date-searchformeetings {
+ 
+    padding: 4px 0 0 0;
+}
+.search-by-date
+{
+margin: 13.021px 0 13.583px 0;
+padding:13.021px 0 13.021px 0;
+
+
+}
+.search-for-textarea
+{
+margin:13.021px 0 13.583px 0;
+     
+padding:5px 0;
+
+}
+ 
+.search-btn.blue-btn{padding:13.021;
+
+margin-bottom: 9px;
+border-radius: 4px;
+}
+
+.meet-search{font-size: 28px;}
+.search-output-meeting-date{font-size:24px;
+margin-top:10px;
+margin-bottom:1px;
+}
+.search-output-meeting-time{font-size:18px;}
+.meeting-title{font-size: 18px;
+margin-top:15px;
+margin-bottom:15px;}
+.search-result{   
+    margin-bottom: 20px;
+    padding:1% 2% 0 2%;}
+.attendees{float:left;
+margin-right: 4px;
+font-size: 18px;
+
+
+}
+
+.search-result{padding-bottom: 0;}
+.add-btn.blue-btn{padding: 6px 8px 21px 8px;
+}
+.select-members-for-meeting{width:200px;
+margin-right:8px;}
+.attendees-example{margin-bottom:12px;}
+ }
